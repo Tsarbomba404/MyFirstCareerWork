@@ -1,5 +1,5 @@
 import React from "react";
-import AchieveMember from "./achievemember";
+import AchieveMember from "./AchieveMember";
 import AchieveClub from "./AchieveClub";
 import AchieveEvent from "./AchieveEvent";
 import AchievePay from "./AchievePay";
