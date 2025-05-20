@@ -7,6 +7,6 @@ import AllSection from "./section/AllSection.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-    <AllSection />
+    {/* <AllSection /> */}
   </StrictMode>
 );
