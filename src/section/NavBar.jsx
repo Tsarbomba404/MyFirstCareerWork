@@ -44,7 +44,7 @@ const NavBar = () => {
 
       {/* Mobile Menu Items */}
       {menuOpen && (
-        <div className="  md:hidden mt-4 flex flex-col gap-4 text-white">
+        <div className="  md:hidden mt-4 flex flex-col gap-4 text-black bg-[#F5F7FA] ">
           <ul className="flex flex-col gap-3">
             <li className=" hover:text-gray-300 cursor-pointer">Home</li>
             <li className="hover:text-gray-300 cursor-pointer">Features</li>
