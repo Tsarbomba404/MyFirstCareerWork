@@ -3,8 +3,8 @@ import oll from "../assets/pana.png";
 
 const Unlock = () => {
   return (
-    <div className="w-full bg-amber-200 px-4 py-10">
-      <div className="grid grid-cols-1 bg-red-500 md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
+    <div className="w-full bg-white px-4 py-10">
+      <div className="grid grid-cols-1 bg-white md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
         <img src={oll} alt="Illustration" className="w- max-w-md mx-auto" />
 
         <div className="flex flex-col gap-5 text-center md:text-left items-center md:items-start">

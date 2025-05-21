@@ -7,19 +7,19 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="bg-red-600 px-7 py-4 w-full">
+    <div className="bg-white px-7 py-4 w-full top-0 sticky z-30">
       {/* Main flex container */}
       <div className="flex justify-between items-center">
         {/* Left side: Logo */}
         <div className="flex gap-2 items-center">
           <img src={HeaderLogo} alt="Logo" className="w-8 h-auto" />
-          <h3 className="text-white font-bold text-lg">Nexcent</h3>
+          <h3 className="text-black font-bold text-lg">Nexcent</h3>
         </div>
 
         {/* Right side */}
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-8 ">
           {/* Desktop Menu (hidden on small screens) */}
-          <ul className="hidden md:flex gap-6 text-white text-sm font-medium">
+          <ul className="hidden md:flex gap-6 text-black text-sm font-medium">
             <li className="hover:text-gray-300 cursor-pointer">Home</li>
             <li className="hover:text-gray-300 cursor-pointer">Features</li>
             <li className="hover:text-gray-300 cursor-pointer">Community</li>

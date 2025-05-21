@@ -2,7 +2,7 @@ import React from "react";
 import MemLogo from "../../assets/MemberLogo.png";
 const AchieveMember = () => {
   return (
-    <div className="flex items-center gap-3 bg-red-400 w-fit  px-3 ">
+    <div className="flex items-center gap-3  e w-fit  px-3 ">
       <div className="">
         <img src={MemLogo} className="" alt="" />
       </div>

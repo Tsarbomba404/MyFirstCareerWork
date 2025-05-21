@@ -6,7 +6,7 @@ import AchievePay from "./AchievePay";
 
 const Achievement = () => {
   return (
-    <div className="bg-gray-100 px-6 py-10">
+    <div className="bg-[#F5F7FA] px-6 py-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Side: Heading */}
         <div className="text-center lg:text-left">
@@ -14,7 +14,7 @@ const Achievement = () => {
             Helping a local <br />
             <span className="text-green-500">business reinvent itself</span>
           </h1>
-          <p className="mt-3 text-gray-600">
+          <p className="mt-3 text-gray-600 font-light">
             We reached here with our hard work and dedication
           </p>
         </div>

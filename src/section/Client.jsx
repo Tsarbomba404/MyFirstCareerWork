@@ -10,11 +10,11 @@ const Client = () => {
   return (
     <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto">
       <div className="text-center my-8">
-        <h1 className="text-4xl text-neutral-300 font-semibold mb-2 ">
+        <h1 className="text-4xl text-neutral-400 font-semibold mb-2 ">
           Our Clients
         </h1>
 
-        <h4 className="text-neutral-400  ">
+        <h4 className="text-black font-light   ">
           We have been working with some Fortune 500+ clients
         </h4>
 

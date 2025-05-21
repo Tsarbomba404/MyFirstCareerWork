@@ -4,7 +4,7 @@ import NationCard from "./NationCard";
 import ClubCard from "./ClubCard";
 const Community = () => {
   return (
-    <div className="bg-red-200">
+    <div className="bg-white">
       <div className="text-center">
         <h1 className="text-4xl font-semibold text-neutral-400">
           Manage your entire community in a single system

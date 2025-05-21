@@ -2,7 +2,7 @@ import React from "react";
 import paymentLogo from "../../assets/PaymentLogo.png";
 const AchievePay = () => {
   return (
-    <div className="flex items-center gap-3 bg-red-400 w-fit  px-3 ">
+    <div className="flex items-center gap-3  w-fit  px-3 ">
       <div className="">
         <img src={paymentLogo} className="" alt="" />
       </div>

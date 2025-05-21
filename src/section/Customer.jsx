@@ -12,8 +12,8 @@ import Logo7 from "../assets/client logo 7.png";
 
 const Customer = () => {
   return (
-    <div className="w-full bg-amber-200 px-4 py-10">
-      <div className="grid grid-cols-1 bg-red-500 md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
+    <div className="w-full bg-[#F5F7FA] px-4 py-10">
+      <div className="grid grid-cols-1   md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
         <img
           src={TeslaPicture}
           alt="Illustration"
@@ -21,9 +21,6 @@ const Customer = () => {
         />
 
         <div className="flex flex-col gap-5 text-center  md:text-left items-center md:items-start">
-          <h1 className="text-2xl font-bold text-gray-800">
-            The unseen of spending three years at Pixelgrade
-          </h1>
           <p className="text-gray-700 leading-relaxed">
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
@@ -37,10 +34,10 @@ const Customer = () => {
             Curabitur id nibh id sem dignissim finibus ac sit amet magna.
           </p>
           <div className=" ">
-            <h1>Tim Smith</h1>
+            <h1 className="text-green-600 font-normal text-2xl ">Tim Smith</h1>
             <h4>British Dragon Boat Racing Association</h4>
 
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-7 justify-center md:justify-start">
               <img src={Logo1} alt="Logo 1" className=" " />
               <img src={Logo2} alt="Logo 2" className=" " />
               <img src={Logo3} alt="Logo 3" className=" " />
