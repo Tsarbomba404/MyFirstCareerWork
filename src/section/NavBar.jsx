@@ -29,7 +29,7 @@ const NavBar = () => {
 
           {/* Desktop "Register Now" Button (hidden on small screens) */}
           <div className="hidden md:flex items-center bg-green-600 px-4 py-2 rounded-md gap-2 cursor-pointer">
-            <h3 className="text-white text-sm">Register Now</h3>
+            <h3 className="text-white text-sm">Amazing</h3>
             <img src={RightArrow} alt="Arrow" className="w-3 h-auto" />
           </div>
 
@@ -55,7 +55,7 @@ const NavBar = () => {
 
           {/* Mobile "Register Now" */}
           <div className="flex items-center bg-green-600 px-4 py-2 rounded-md gap-2 w-max cursor-pointer">
-            <h3 className="text-white text-sm">Register Now</h3>
+            <h3 className="text-white text-sm">Amazing</h3>
             <img src={RightArrow} alt="Arrow" className="w-3 h-auto" />
           </div>
         </div>

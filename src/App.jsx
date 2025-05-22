@@ -1,39 +1,30 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProtectedRoute from "./section/ProtectedRoute";
 
-const FirstSection = lazy(() => import("./section/FirstSection"));
-const NavBar = lazy(() => import("./section/NavBar"));
-const Client = lazy(() => import("./section/Client"));
-const Community = lazy(() => import("./section/Community/Community"));
-const Unlock = lazy(() => import("./section/Unlock"));
-const Achievement = lazy(() => import("./section/AchieveSection/Achievement"));
-const Calender = lazy(() => import("./section/Calender"));
-const Customer = lazy(() => import("./section/Customer"));
-const CommunityUpdates = lazy(() =>
-  import("./section/CommunityUpdates/CommunityUpdates")
-);
-const SecondToLast = lazy(() => import("./section/SecondToLast"));
-const Footer = lazy(() => import("./section/Footer/Footer"));
+// Lazy-loaded components
 const AllSection = lazy(() => import("./section/AllSection"));
+const SignUpPage = lazy(() => import("./section/SignPages/SignUp"));
+const SignInPage = lazy(() => import("./section/SignPages/Login"));
 
 function App() {
   return (
     <Router>
-      <Suspense fallback={<p>Loading</p>}>
+      <Suspense fallback={<p>Loading...</p>}>
         <Routes>
-          <Route path="/" element={<AllSection />} />
-          <Route path="firstsection" element={<FirstSection />} />
+          {/* ✅ Auth Routes */}
+          <Route path="/" element={<SignUpPage />} />
+          <Route path="/signin" element={<SignInPage />} />
 
-          <Route path="/navbar" element={<NavBar />} />
-          <Route path="/client" element={<Client />} />
-          <Route path="/community" element={<Community />} />
-          <Route path="/unlock" element={<Unlock />} />
-          <Route path="/achievement" element={<Achievement />} />
-          <Route path="/calender" element={<Calender />} />
-          <Route path="/customer" element={<Customer />} />
-          <Route path="/communityupdates" element={<CommunityUpdates />} />
-          <Route path="/secondtolast" element={<SecondToLast />} />
-          <Route path="/footer" element={<Footer />} />
+          {/* ✅ Protected Main App Route */}
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <AllSection />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </Suspense>
     </Router>
